@@ -1,0 +1,33 @@
+*{
+  padding: 0px;
+  margin: 0px;
+}
+.page{
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+.bmitxtclr{
+  color: white;
+  text-shadow: -1px -1px 0 #000000, 
+               1px -1px 0 #000000,
+               -1px 1px 0 #000000,
+               1px 1px 0 #000000,
+               -1px -1px 0 #000000, 
+               1px -1px 0 #000000,
+               -1px 1px 0 #000000,
+               1px 1px 0 #000000;
+  font-weight: 1000;
+  letter-spacing: 0.15rem;
+}
+.slider{
+  accent-color: rgb(25,135,84);
+}
+.slider::-webkit-slider-thumb {
+  appearance: none; /* removes browser-specific styling */
+  width: 20px; /* handle width */
+  height: 20px; /* handle height */
+  border-radius: 50%; /* make it circular */
+  background: #FFFFFF; /* white color */
+  cursor: pointer; /* cursor on hover */
+}
