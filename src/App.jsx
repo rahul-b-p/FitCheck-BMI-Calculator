@@ -5,7 +5,7 @@ import { faCircleInfo } from '@fortawesome/free-solid-svg-icons';
 import { Button, Modal, Row, Col,Spinner } from 'react-bootstrap';
 import { useState } from 'react';
 import { toast } from 'react-toastify';
-
+import fitCheckImg from './assets/Fitcheck.png';
 
 
 
@@ -82,7 +82,7 @@ function App() {
     <>
       <div className="page bg-secondary">
         <div className=' d-flex align-items-center bg-dark w-100'>
-          <img src="./src\assets\Fitcheck.png" alt="" width={60} className='ms-2 mt-1'/>
+          <img src={fitCheckImg} alt="" width={60} className='ms-2 mt-1'/>
           <h2 className='text-success ms-2 mt-1'>FitCheck</h2>
           <Button className='bg-dark border-dark ms-auto me-2 onClick={handleShow}' onClick={handleShow}>
             <FontAwesomeIcon icon={faCircleInfo} className='text-light' size='xl'/>
