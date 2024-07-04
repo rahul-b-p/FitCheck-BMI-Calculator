@@ -82,7 +82,7 @@ function App() {
     <>
       <div className="page bg-secondary">
         <div className=' d-flex align-items-center bg-dark w-100'>
-          <img src="../public/Fitcheck.png" alt="" width={60} className='ms-2 mt-1'/>
+          <img src="./src\assets\Fitcheck.png" alt="" width={60} className='ms-2 mt-1'/>
           <h2 className='text-success ms-2 mt-1'>FitCheck</h2>
           <Button className='bg-dark border-dark ms-auto me-2 onClick={handleShow}' onClick={handleShow}>
             <FontAwesomeIcon icon={faCircleInfo} className='text-light' size='xl'/>
