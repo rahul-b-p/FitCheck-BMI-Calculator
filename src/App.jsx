@@ -4,9 +4,9 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { faCircleInfo } from '@fortawesome/free-solid-svg-icons';
 import { Button, Modal, Row, Col,Spinner } from 'react-bootstrap';
 import { useState } from 'react';
-import { toast } from 'react-toastify';
+import { toast, ToastContainer } from 'react-toastify';
 import fitCheckImg from './assets/Fitcheck.png';
-
+import 'react-toastify/dist/ReactToastify.css';
 
 
 function App() {
@@ -67,8 +67,7 @@ function App() {
       }
     }
     else{
-      alert('Please Fill Input Completely')
-      toast.info('Please fill completely')
+      toast.error('Please fill completely')
     }
   }
 
@@ -153,6 +152,7 @@ function App() {
               <div className='d-flex mt-4 w-100'>
                 <button type='button' onClick={handleReset} className='ms-auto btn btn-light'>Reset</button>
                 <button type='button' onClick={handleResult} className='ms-2 btn btn-danger'>Submit</button>
+                <ToastContainer theme='colored' position='top-center' closeOnClick />
               </div>
             </form>
           
@@ -161,6 +161,7 @@ function App() {
         </Row>
         <p className='text-center text-light' style={{marginTop:'100px',fontSize:'9px'}}>BMI-Calculator Developed by Rahul B P© Using React.JS</p>
       </div>
+      
     </>
       
   )
